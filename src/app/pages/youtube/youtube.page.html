@@ -3,14 +3,14 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title  color="primary">Youtube Player</ion-title>
+    <ion-title color="primary">Youtube Player</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <p style="text-align: center;">Angular Youtube Player</p>
-  <div>
-    <youtube-player [videoId]="id" width="100%"  [height]="200" (ready)="savePlayer($event)" (change)="onStateChange($event)">
+  <div style="width: 100%;text-align: center;">
+    <youtube-player [videoId]="id" [height]="200" (ready)="savePlayer($event)" (change)="onStateChange($event)">
     </youtube-player>
   </div>
 
