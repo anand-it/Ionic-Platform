@@ -1,9 +1,70 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>geolocation</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary">location</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+
+  <p style="text-align: center;">Geolocation & Gecoder App</p>
+
+  <ion-grid>
+
+    <!-- Latitude -->
+    <ion-row>
+      <ion-col size="4" class="ion-text-center">
+        Latitue
+      </ion-col>
+      <ion-col>
+        <ion-badge class="ion-text-wrap" color="primary">{{latitude}}</ion-badge>
+      </ion-col>
+    </ion-row>
+
+    <!-- Longitude -->
+    <ion-row>
+      <ion-col size="4" class="ion-text-center">
+        longitude
+      </ion-col>
+      <ion-col>
+        <ion-badge class="ion-text-wrap" color="primary">{{longitude}}</ion-badge>
+      </ion-col>
+    </ion-row>
+
+    <!-- Accuracy -->
+    <ion-row>
+      <ion-col size="4" class="ion-text-center" color="medium">
+        Accuracy
+      </ion-col>
+      <ion-col>
+        <ion-badge class="ion-text-wrap" color="primary">{{accuracy}}</ion-badge>
+      </ion-col>
+    </ion-row>
+
+    <!-- Pincode -->
+    <ion-row>
+      <ion-col size="4" class="ion-text-center" color="medium">
+        Pincode
+      </ion-col>
+      <ion-col>
+        <ion-badge class="ion-text-wrap" color="primary">{{pincode}}</ion-badge>
+      </ion-col>
+    </ion-row>
+
+    <!-- Address -->
+    <ion-row>
+      <ion-col size="4" class="ion-text-center">
+        Address
+      </ion-col>
+      <ion-col>
+        <ion-badge class="ion-text-wrap" color="primary">{{address}}</ion-badge>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-button (click)="getGeolocation()" color="primary" expand="full">Get Location</ion-button>
 
 </ion-content>
