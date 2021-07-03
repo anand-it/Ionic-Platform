@@ -11,7 +11,14 @@ const routes: Routes = [
         path: 'home',
         loadChildren: () => import('../pages/home/home.module').then(m => m.HomePageModule)
       },
-
+      {
+        path: 'collection',
+        loadChildren: () => import('../pages/collection/collection.module').then( m => m.CollectionPageModule)
+      },
+      {
+        path: 'profile',
+        loadChildren: () => import('../pages/profile/profile.module').then( m => m.ProfilePageModule)
+      },
       {
         path: '',
         redirectTo: '/tabs/home',

@@ -45,6 +45,14 @@ const routes: Routes = [
   {
     path: 'charts',
     loadChildren: () => import('./pages/charts/charts.module').then( m => m.ChartsPageModule)
+  },
+  {
+    path: 'collection',
+    loadChildren: () => import('./pages/collection/collection.module').then( m => m.CollectionPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
   }
 ];
 @NgModule({
