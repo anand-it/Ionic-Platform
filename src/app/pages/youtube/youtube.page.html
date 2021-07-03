@@ -10,7 +10,7 @@
 <ion-content>
   <p style="text-align: center;">Angular Youtube Player</p>
   <div>
-    <youtube-player [videoId]="id" [height]="200" (ready)="savePlayer($event)" (change)="onStateChange($event)">
+    <youtube-player [videoId]="id" width="100%"  [height]="200" (ready)="savePlayer($event)" (change)="onStateChange($event)">
     </youtube-player>
   </div>
 
