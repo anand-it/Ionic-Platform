@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary">Charts-Web</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<div>
+  <p>
+    <ngx-charts-bar-vertical 
+    [view]="[1000,400]"
+    [results]="saleData"
+    [xAxisLabel]="'Products'"
+    [legendTitle]="'Product Sale Chart'"
+    [yAxisLabel]="'Sale'"
+    [legend]="true"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    [xAxis]="true"
+    [yAxis]="true"
+    [gradient]="true">
+</ngx-charts-bar-vertical>
+  </p>
+ 
+<p>
+  <ngx-charts-pie-chart 
+  [results]="saleData"
+  [legend]="true"
+  [legendTitle]="'Product Sale Report'" 
+  [view]="[1000,300]"
+  [labels]="true" >
+</ngx-charts-pie-chart>
+</p>
+
+<p>
+  <ngx-charts-advanced-pie-chart 
+  [results]="saleData"
+  [gradient]="true" >
+</ngx-charts-advanced-pie-chart>
+</p>
+
+<p>
+  <ngx-charts-pie-grid 
+  [results]="saleData" >
+</ngx-charts-pie-grid>
+</p>
+
+</div>
+</ion-content>

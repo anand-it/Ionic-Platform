@@ -53,6 +53,10 @@ const routes: Routes = [
   {
     path: 'profile',
     loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'charts-web',
+    loadChildren: () => import('./pages/charts-web/charts-web.module').then( m => m.ChartsWebPageModule)
   }
 ];
 @NgModule({
