@@ -1,1 +1,1 @@
-"# Ionic-Platform" 
+"Ionic-Platform" 
