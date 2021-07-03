@@ -16,9 +16,10 @@ const routes: Routes = [
         loadChildren: () => import('../pages/collection/collection.module').then( m => m.CollectionPageModule)
       },
       {
-        path: 'profile',
-        loadChildren: () => import('../pages/profile/profile.module').then( m => m.ProfilePageModule)
+        path: 'menu',
+        loadChildren: () => import('../pages/menu/menu.module').then( m => m.MenuPageModule)
       },
+
       {
         path: '',
         redirectTo: '/tabs/home',

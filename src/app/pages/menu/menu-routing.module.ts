@@ -6,8 +6,20 @@ import { MenuPage } from './menu.page';
 const routes: Routes = [
   {
     path: '',
-    component: MenuPage
+    redirectTo: '/tabs/menu/profile',
+    pathMatch: 'full'
+  },
+  {
+    path: '',
+    component: MenuPage,
+    children:[
+      {
+        path: 'profile',
+        loadChildren: () => import('../profile/profile.module').then( m => m.ProfilePageModule)
+      },
+    ]
   }
+ 
 ];
 
 @NgModule({
