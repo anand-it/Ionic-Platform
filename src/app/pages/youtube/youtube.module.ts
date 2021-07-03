@@ -7,13 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { YoutubePageRoutingModule } from './youtube-routing.module';
 
 import { YoutubePage } from './youtube.page';
-
+import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    YoutubePageRoutingModule
+    YoutubePageRoutingModule,
+    NgxYoutubePlayerModule
   ],
   declarations: [YoutubePage]
 })

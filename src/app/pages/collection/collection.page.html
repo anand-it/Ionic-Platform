@@ -1,9 +1,15 @@
-<ion-header class="ion-no-border">
+<ion-header>
   <ion-toolbar>
-    <ion-title>My Collection</ion-title>
+    <ion-title style="text-align: center;" color="primary">My Collection</ion-title>
   </ion-toolbar>
+  <ion-searchbar mode="ios" #myInput (ionChange)="filterItem(myInput.value)"></ion-searchbar>
+
 </ion-header>
 
-<ion-content>
-
+<ion-content >
+  <ion-grid>
+      <ion-item *ngFor="let collection of filteredItems; let i = index" lines="none" (click)="gotoUrl(i)">
+        <p style="margin-top: auto;">{{collection.collection}}</p>
+      </ion-item>
+  </ion-grid>
 </ion-content>
