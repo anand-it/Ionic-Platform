@@ -42,7 +42,7 @@ export class CollectionPage implements OnInit {
   }
 
   gotoUrl(i:any){
-    this.router.navigate([this.myCollectionList[i].url])
+    this.router.navigate([this.filteredItems[i].url])
   }
 
 }
