@@ -1,9 +1,49 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>paypal-mobile</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary" >Paypal Mobile</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        Use this Pay button in your app's payment page with the attached logic.
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card mode="ios">
+    <ion-img src="https://raw.githubusercontent.com/anand-it/ionic4-paypal/master/src/assets/paypal.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle style="text-align: center;">Get Started</ion-card-subtitle>
+      <!-- <ion-card-title>PayPal Sample</ion-card-title> -->
+      <ion-row>
+        <ion-col>
+          Total Payment
+        </ion-col>
+        <ion-col>
+          {{currencyIcon}}{{paymentAmount}}
+        </ion-col>
+      </ion-row>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button expand="full" color="success" (click)="payWithPaypal()">Pay with PayPal</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label>Resources</ion-label>
+    </ion-list-header>
+    <ion-item href="https://ionicframework.com/docs/native/paypal">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>Paypal Plugin Documentation</ion-label>
+    </ion-item>
+    <ion-item href="https://enappd.com/blog/paypal-integration-in-ionic-apps-and-pwa/142/">
+      <ion-icon slot="start" color="medium" name="build"></ion-icon>
+      <ion-label>Paypal Integration</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
