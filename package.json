@@ -40,6 +40,7 @@
     "com.razorpay.cordova": "^1.4.13",
     "cordova-plugin-geolocation": "^4.1.0",
     "cordova-plugin-nativegeocoder": "^3.4.1",
+    "jetifier": "^2.0.0",
     "ngx-youtube-player": "^9.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
