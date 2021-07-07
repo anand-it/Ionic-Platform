@@ -1,9 +1,49 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>razerpay-mobile</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary" >Razor Mobile</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        Use this Pay button in your app's payment page with the attached logic.
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-card mode="ios">
+    <ion-img src="data:image/png;base64,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"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle style="text-align: center;">Get Started</ion-card-subtitle>
+      <!-- <ion-card-title>PayPal Sample</ion-card-title> -->
+      <ion-row>
+        <ion-col>
+          Total Payment
+        </ion-col>
+        <ion-col>
+         {{payAmount}}
+        </ion-col>
+      </ion-row>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button expand="full" color="primary" (click)="pay()">Pay with RazorPay</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <!-- <ion-list lines="none">
+    <ion-list-header>
+      <ion-label>Resources</ion-label>
+    </ion-list-header>
+    <ion-item href="https://ionicframework.com/docs/native/paypal">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>Paypal Plugin Documentation</ion-label>
+    </ion-item>
+    <ion-item href="https://enappd.com/blog/paypal-integration-in-ionic-apps-and-pwa/142/">
+      <ion-icon slot="start" color="medium" name="build"></ion-icon>
+      <ion-label>Paypal Integration</ion-label>
+    </ion-item>
+  </ion-list> -->
 </ion-content>

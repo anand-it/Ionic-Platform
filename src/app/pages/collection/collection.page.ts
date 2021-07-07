@@ -16,8 +16,8 @@ export class CollectionPage implements OnInit {
       { collection: 'Google Maps', url: '/googlemaps' },
       { collection: 'PayPal Mobile', url: '/paypal-mobile' },
       { collection: 'PayPal Web', url: '/paypal-web' },
-      { collection: 'RazerPay Mobile', url: '/razerpay-web' },
-      { collection: 'RazerPay Web', url: '/razerpay-mobile' },
+      { collection: 'RazerPay Mobile', url: '/razerpay-mobile' },
+      { collection: 'RazerPay Web', url: '/razerpay-web' },
       { collection: 'Chart', url: '/charts' },
       // { collection: 'Chart Web', url: '/charts-web' },
      

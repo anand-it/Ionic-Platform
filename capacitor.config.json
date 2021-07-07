@@ -2,5 +2,10 @@
 	"appId": "io.ionic.starter",
 	"appName": "ionic",
 	"webDir": "www",
-	"bundledWebRuntime": false
+	"bundledWebRuntime": false,
+	"android-versionCode": "2",
+	"version": "0.0.2",
+	"server": {
+		"cleartext": true
+	}
 }
