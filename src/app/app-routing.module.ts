@@ -57,7 +57,11 @@ const routes: Routes = [
   {
     path: 'charts-web',
     loadChildren: () => import('./pages/charts-web/charts-web.module').then( m => m.ChartsWebPageModule)
+  },  {
+    path: 'viewcollection',
+    loadChildren: () => import('./pages/viewcollection/viewcollection.module').then( m => m.ViewcollectionPageModule)
   }
+
 ];
 @NgModule({
   imports: [

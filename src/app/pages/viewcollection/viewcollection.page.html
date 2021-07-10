@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary" >View Collection</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-slides style="margin-top: 5%;margin-bottom: 3%;" loop="true" #slider (ionSlidesDidLoad)="slideChanged(slider)" pager="true">
+    <ion-slide>
+      <img style="height: 240px;;width: 100%;object-fit: cover;" src="{{profile.images}}" />
+    </ion-slide>
+    <ion-slide>
+      <img style="height: 240px;;width: 100%;object-fit: cover;" src="https://www.callcentrehelper.com/images/stories/2011/04/expert-agent-760.jpg" />
+    </ion-slide>
+    <ion-slide>
+      <img style="height: 240px;;width: 100%;object-fit: cover;" src="https://onequote.ie/wp-content/uploads/2016/05/customercare.jpg" />
+    </ion-slide>
+    <ion-slide>
+      <img style="height: 240px;;width: 100%;object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ9J69fbLKJoDIDGXrsKLfF7QmIzwa1Rvx9x9TFlzQdVcGW0trY_8NoebrniEs-3_5en4&usqp=CAU" />
+    </ion-slide>
+    <ion-slide>
+      <img style="height: 240px;;width: 100%;object-fit: cover;" src="https://lh3.googleusercontent.com/proxy/0-rX1iniDv2tTjCOuVUiN_gcVS_kB5v0aBCpHdSLk6gEti4UR_S5INluOYZKKC3Jytob6RAcmMWgKoFx1Lomq0B6tOneibBPJiEMwgQerMiyK0QlAdN1KwJu4wxn2ec-meiIgN0CZ330vbSNKFnDpQ" />
+    </ion-slide>
+  </ion-slides>
+  <ion-grid style="width: 94%;
+  background: whitesmoke;">
+    <h4>{{profile.name}}</h4>
+    <p>{{profile.address}}</p>
+  </ion-grid>
+</ion-content>

@@ -1,9 +1,104 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>home</ion-title>
+    <ion-title style="text-align: center;" color="primary">Home</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content style="--background: whitesmoke;">
 
+  <ion-grid>
+    <ion-row class="ion-nowrap" style="overflow-x: scroll;margin-top: 2%;width: 100%;">
+      <ion-col style="border-radius: 12px;margin-left: 2%;background: white;" size="7"
+        *ngFor="let profile of profileList;let i = index">
+        <div>
+          <img style="width: 100%;height: 200px;border-radius: 12px 12px 1px 1px;object-fit: cover;"
+            src="{{profile.images}}">
+        </div>
+        <h4>{{profile.name}}</h4>
+        <p>{{profile.address}}</p>
+        <ion-row>
+          <ion-col size="4" (click)="gotocollection(i)">
+            <div style="border: 1px solid white;
+            text-align: center;
+            width: 92%;
+            height: 40px;
+            border-radius: 12px;
+            background: orange;
+            color: white;
+            font-weight: bold;">
+              <p style="margin: auto;
+              margin-top: 10px;">Yes</p>
+            </div>
+          </ion-col>
+          <ion-col size="4">
+            <div style="border: 1px solid black;
+            text-align: center;
+            width: 92%;
+            height: 40px;
+            border-radius: 11px;">
+              <p style="margin: auto;
+              margin-top: 10px;">No</p>
+            </div>
+          </ion-col>
+          <ion-col size="4">
+
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-card style="margin-top:5% ;">
+      <div>
+        <img  style="width: 100%;object-fit: cover;" src="{{selectedimages.images}}">
+      </div>
+      <h4 style="margin-left: 2%;font-weight:bold;color: black;">{{selectedimages.name}}</h4>
+      <p style="margin-left: 2%;">{{selectedimages.address}}</p>
+      <ion-row>
+        <ion-col size="4" (click)="change('short')">
+          <p>
+            <span>
+              <ion-icon  style="zoom: 1.2;" name="star-outline"></ion-icon>
+            </span>
+            <span>
+              Shortlist
+            </span>
+            
+          </p>
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+        <ion-col size="3">
+          <p style="font-weight: bold;">Like her?</p>
+        </ion-col>
+        <ion-col size="2" (click)="change('yes')">
+          <div style="border: 1px solid white;
+          text-align: center;
+          width: 92%;
+          height: 40px;
+          border-radius: 12px;
+          background: orange;
+          color: white;
+          font-weight: bold;">
+            <ion-icon style="margin-top: 5px;
+           zoom: 1.5;
+           font-weight: bold;" name="checkmark-outline"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col size="2" (click)="change('close')">
+          <div style="border: 1px solid black;
+          text-align: center;
+          width: 92%;
+          height: 40px;
+          border-radius: 11px;">
+            <ion-icon style="margin-top: 5px;
+          zoom: 1.5;
+          font-weight: bold;" name="close-outline"></ion-icon>
+          </div>
+        </ion-col>
+
+      </ion-row>
+    </ion-card>
+  </ion-grid>
 </ion-content>
