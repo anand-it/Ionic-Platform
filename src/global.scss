@@ -49,3 +49,17 @@ p,
 span{
  font-family: "AppFont" !important;
 }
+
+.animate-zoom {
+    animation: animatezoom 1s;
+  }
+  
+  @keyframes animatezoom {
+    from {
+      transform: scale(0);
+    }
+  
+    to {
+      transform: scale(1);
+    }
+  }

@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header  class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content>
-<ion-slides style="margin-top: 5%;margin-bottom: 3%;" loop="true" #slider (ionSlidesDidLoad)="slideChanged(slider)" pager="true">
+<ion-slides style="margin-top: 5%;margin-bottom: 3%;z-index: -1;" loop="true" #slider (ionSlidesDidLoad)="slideChanged(slider)" pager="true">
     <ion-slide>
       <img style="height: 240px;;width: 100%;object-fit: cover;" src="{{profile.images}}" />
     </ion-slide>
@@ -22,12 +22,42 @@
       <img style="height: 240px;;width: 100%;object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ9J69fbLKJoDIDGXrsKLfF7QmIzwa1Rvx9x9TFlzQdVcGW0trY_8NoebrniEs-3_5en4&usqp=CAU" />
     </ion-slide>
     <ion-slide>
-      <img style="height: 240px;;width: 100%;object-fit: cover;" src="https://lh3.googleusercontent.com/proxy/0-rX1iniDv2tTjCOuVUiN_gcVS_kB5v0aBCpHdSLk6gEti4UR_S5INluOYZKKC3Jytob6RAcmMWgKoFx1Lomq0B6tOneibBPJiEMwgQerMiyK0QlAdN1KwJu4wxn2ec-meiIgN0CZ330vbSNKFnDpQ" />
+      <img style="height: 240px;;width: 100%;object-fit: cover;" src="https://assets.entrepreneur.com/content/3x2/2000/20200310160536-GettyImages-1132874986.jpeg" />
     </ion-slide>
   </ion-slides>
-  <ion-grid style="width: 94%;
-  background: whitesmoke;">
+  <ion-grid style="background: whitesmoke;margin-top: -24px;border-radius: 15px 15px 0px 0px;width: 98%;">
     <h4>{{profile.name}}</h4>
     <p>{{profile.address}}</p>
+
+    <ion-row style="background: white;">
+      <ion-col size="4" (click)="change('short')">
+        <p>
+          <span>
+            <ion-icon style="zoom: 1.2;" name="star-outline"></ion-icon>
+          </span>
+          <span>
+            Shortlist
+          </span>
+        </p>
+      </ion-col>
+      <ion-col>
+      </ion-col>
+      <ion-col size="3">
+        <p style="font-weight: bold;">Like her?</p>
+      </ion-col>
+      <ion-col size="2" (click)="change('yes')">
+        <div class="yes">
+          <ion-icon style="margin-top: 5px;zoom: 1.5;font-weight: bold;" name="checkmark-outline"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col size="2" (click)="change('close')">
+        <div class="close">
+          <ion-icon style="margin-top: 5px;
+        zoom: 1.5;
+        font-weight: bold;" name="close-outline"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+
   </ion-grid>
 </ion-content>
