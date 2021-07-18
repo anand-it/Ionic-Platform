@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PayPal, PayPalPayment, PayPalConfiguration } from '@ionic-native/paypal/ngx';
+// import { PayPal, PayPalPayment, PayPalConfiguration } from '@ionic-native/paypal/ngx';
 @Component({
   selector: 'app-paypal-web',
   templateUrl: './paypal-web.page.html',
@@ -9,7 +9,7 @@ export class PaypalWebPage implements OnInit {
   paymentAmount: string = '3.33';
   currency: string = 'USD';
   currencyIcon: string = '$';
-  constructor(private payPal: PayPal) { }
+  constructor() { }
 
   ngOnInit() {
     this.pay();

@@ -38,6 +38,7 @@
     "chart.js": "^3.4.0",
     "com.paypal.cordova.mobilesdk": "^3.5.0",
     "com.razorpay.cordova": "^1.4.13",
+    "cordova-plugin-cocoapod-support": "^1.6.2",
     "cordova-plugin-geolocation": "^4.1.0",
     "cordova-plugin-nativegeocoder": "^3.4.1",
     "hammerjs": "2.0.8",
