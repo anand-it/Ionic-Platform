@@ -60,6 +60,14 @@ const routes: Routes = [
   },  {
     path: 'viewcollection',
     loadChildren: () => import('./pages/viewcollection/viewcollection.module').then( m => m.ViewcollectionPageModule)
+  },
+  {
+    path: 'stripeweb',
+    loadChildren: () => import('./pages/stripeweb/stripeweb.module').then( m => m.StripewebPageModule)
+  },
+  {
+    path: 'stripemobile',
+    loadChildren: () => import('./pages/stripemobile/stripemobile.module').then( m => m.StripemobilePageModule)
   }
 
 ];

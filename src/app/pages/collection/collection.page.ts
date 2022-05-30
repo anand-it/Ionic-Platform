@@ -19,6 +19,8 @@ export class CollectionPage implements OnInit {
       { collection: 'RazerPay Mobile', url: '/razerpay-mobile' },
       { collection: 'RazerPay Web', url: '/razerpay-web' },
       { collection: 'Chart', url: '/charts' },
+      { collection: 'Stripe Mobile', url: '/stripemobile' },
+      { collection: 'Stripe Web', url: '/stripeweb' },
       // { collection: 'Chart Web', url: '/charts-web' },
      
     ]

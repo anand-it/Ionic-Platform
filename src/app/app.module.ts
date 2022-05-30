@@ -8,7 +8,9 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
 import { NgxChartsModule }from '@swimlane/ngx-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from "@angular/common/http";
 import { PayPal } from '@ionic-native/paypal/ngx';
+import { Stripe } from '@ionic-native/stripe/ngx';
 import * as Hammer from 'hammerjs';
 
 export class MyHammerConfig extends HammerGestureConfig {
@@ -21,6 +23,7 @@ export class MyHammerConfig extends HammerGestureConfig {
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     NgxChartsModule,
     IonicModule.forRoot(),
@@ -29,6 +32,7 @@ export class MyHammerConfig extends HammerGestureConfig {
     Geolocation,
     NativeGeocoder,
     PayPal,
+    Stripe,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     {
       provide: HAMMER_GESTURE_CONFIG,
