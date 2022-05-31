@@ -12,6 +12,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { PayPal } from '@ionic-native/paypal/ngx';
 import { Stripe } from '@ionic-native/stripe/ngx';
 import * as Hammer from 'hammerjs';
+import { HTTP } from '@ionic-native/http/ngx';
 
 export class MyHammerConfig extends HammerGestureConfig {
   overrides = <any>{
@@ -32,6 +33,7 @@ export class MyHammerConfig extends HammerGestureConfig {
     Geolocation,
     NativeGeocoder,
     PayPal,
+    HTTP,
     Stripe,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     {

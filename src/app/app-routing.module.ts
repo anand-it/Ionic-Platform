@@ -68,6 +68,10 @@ const routes: Routes = [
   {
     path: 'stripemobile',
     loadChildren: () => import('./pages/stripemobile/stripemobile.module').then( m => m.StripemobilePageModule)
+  },
+  {
+    path: 'cashfree',
+    loadChildren: () => import('./pages/cashfree/cashfree.module').then( m => m.CashfreePageModule)
   }
 
 ];

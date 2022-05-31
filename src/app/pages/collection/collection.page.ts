@@ -21,7 +21,7 @@ export class CollectionPage implements OnInit {
       { collection: 'Chart', url: '/charts' },
       { collection: 'Stripe Mobile', url: '/stripemobile' },
       { collection: 'Stripe Web', url: '/stripeweb' },
-      // { collection: 'Chart Web', url: '/charts-web' },
+      { collection: 'Cash Free', url: '/cashfree' },
      
     ]
   }
